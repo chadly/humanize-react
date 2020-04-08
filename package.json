@@ -1,0 +1,46 @@
+{
+  "name": "humanize-react",
+  "description": "Comma delimit an array of React components for human readability.",
+  "author": "Chad Lee",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "compile": "rimraf lib && babel src -d lib",
+    "lint": "eslint src",
+    "prepublishOnly": "npm run lint && npm run compile"
+  },
+  "keywords": [
+    "humanize",
+    "array",
+    "list",
+    "react",
+    "format",
+    "comma",
+    "delimit",
+    "oxford"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chadly/humanize-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chadly/humanize-react/issues"
+  },
+  "homepage": "https://github.com/chadly/humanize-react#README",
+  "peerDependencies": {
+    "react": "16.x"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "@runly/eslint-config": "^1.0.1",
+    "core-js": "^3.6.4",
+    "eslint": "^6.8.0",
+    "prettier": "^2.0.4",
+    "react": "^16.13.1",
+    "rimraf": "^3.0.2"
+  }
+}
